@@ -1,0 +1,51 @@
+
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/site/assets/views.css" />
+</head>
+<body>
+
+
+<h1>LOGGA IN</h1>
+
+
+
+<form action="/site/login" autocomplete="off" method="POST">
+
+    <div>
+
+        <label>Username:</label>
+        <input type="text" name="username"/>
+        <%if (usernamewrong) {%>  <div class="deny">ICKE EXISTERANDE ANVÄNDARNAMN</div> <%}%>
+
+    </div>
+
+
+    <div>
+
+        <label>Password:</label>
+        <input type="password" name="password"/>
+         <%if (passwordwrong) {%>  <div class="deny">FEL LÖSENORD</div> <%}%>
+
+    </div>
+
+
+    <div>
+        <button type="submit">Logga in</button>
+    </div>
+
+</form><br>
+<div class="squarecontainer">
+    <a href="/site/register">Skapa konto</a><br>
+    <a href="/site">tillbaks till start</a>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/site/assets/views.css" />
+</head>
+<body>
+
+<style>  
+        
+#portcan{
+
+    float: left;
+    background-color: white;
+    margin: 10px;
+    border: black 3px solid;
+}
+form{
+
+    width: 250px;
+    float: left;
+}
+a{
+    float: bottom;
+}
+</style>
+
+<h1>SKAPA KONTO</h1>
+
+
+
+<form action="/site/register" method="POST">
+
+    <div>
+
+        <label>Username:</label>
+        <input type="text" name="username"/>
+
+    </div>
+
+    <div>
+
+        <label>Password:</label>
+        <input type="password" name="password"/>
+
+    </div>
+
+      <div>
+
+        <label>Color1:</label>
+        <input type="color" name="primaryColor" />
+        <label>Color2:</label>
+        <input type="color" name="secendaryColor" />
+
+    </div>
+
+    <div>
+        <button type="submit">Sign up</button>
+    </div>
+
+</form>
+<br>
+<canvas id="portcan" width="150" height="200"></canvas>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class="squarecontainer">
+    <a href="/site">tillbaks till start</a><br>
+    <a href="/site/login">Logga in</a>
+</div>
+<script>
+    
+var canvas = document.getElementById('portcan');
+var ctx = canvas.getContext('2d');
+ 
+
+ctx.beginPath();
+ctx.moveTo(0, 0);
+ctx.lineTo(150, 200);
+ctx.stroke();
+
+
+</script>
+
+
+</body>
+</html>

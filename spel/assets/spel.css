@@ -1,0 +1,136 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Arial';
+    overflow: hidden;
+   
+}
+
+canvas{
+    display: block;
+    z-index: 0;
+}
+input{
+
+    width: 70px;
+    border-radius: 7px;
+    margin: 3px;
+
+}
+button{
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.ui{
+    position: absolute;
+    z-index: 2;
+    border: solid rgb(136, 136, 136) 2px;
+    background-color: rgba(20, 20, 20, 0.801);
+    padding: 10px;
+    color: rgb(136, 136, 136);
+}
+
+.uiCenter{
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.uiCenterDown{
+
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+
+.uiECSymb{
+
+    position: relative;
+    z-index: 2;
+}
+#svgLines{
+   
+    z-index: 1;
+
+}
+
+.cityheader{
+    position: absolute;
+    transform: translate(-50%, -0%);
+    background-color: rgba(120, 120, 120, .4);
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    color: darkgray;
+    padding-right: 13px;
+    padding-left: 13px;
+    z-index: 1;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+.armyheader{
+   
+    position: absolute;
+    transform: translate(-50%, 0%);
+    border: 2px solid ;
+    border-radius: 15px;
+    padding: 2px;
+    z-index: 1;
+}
+
+.armyheaderSELECTED{
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 256, 1), 0 0px 20px 0 rgba(0, 0, 256, 1);
+    position: absolute;
+    transform: translate(-50%, -0%);
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 2px;
+    z-index: 1;
+}
+
+#uiright{
+right: 5px;
+top: 5px;
+}
+#uileft{
+left: 5px;
+top: 5px;
+}
+#uimain{
+    left: 50%;
+    width: 65%;
+    margin-left: -32.5%;
+    margin-top: 5px;
+    text-align: center;
+    display: none;
+}
+.close{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+#main_right{/*antänds ej för tillfället*/
+
+    right: 0px;
+    border-right: none;
+    height: 450px;
+    background-color: teal;
+    color: black;
+}

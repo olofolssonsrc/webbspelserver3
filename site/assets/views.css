@@ -1,0 +1,40 @@
+    
+.deny{
+
+    color: rgb(0, 255, 115);
+}
+.proc{ 
+    color: rgb(0, 255, 115);
+}
+
+body{
+
+    background-color: rgb(0, 116, 0);
+    color: rgb(255, 162, 201);
+    font-family: 'Arial';
+}
+a{
+    color: rgb(255, 162, 201);
+}
+
+#btn{
+    background-color: skyblue;
+}
+div{
+    margin: 20px;
+}
+.squarecontainer{
+    
+    background-color: rgb(0, 116, 0);
+    border: 4px darkgray solid;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+#skyblue{
+    color: rgb(255, 255, 255);
+}
+#salmon{
+    color: rgb(60, 255, 0);
+    text-decoration: underline;
+}

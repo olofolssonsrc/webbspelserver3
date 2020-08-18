@@ -1,0 +1,79 @@
+TODO webbterrängspel
+
+
+ STÄDER
+  
+	göra så att man kan gå in i en stad. och lista ut vad det innebär att gå in i en stad
+
+        grunda städer var man klickar
+
+        huvudstäder. får en stjärna på ui och kanske genererar mer pengar?
+
+	max avstånd från sin huvudstad för att ny grunda stad
+
+	min avstnd från andra städer
+	
+
+ ONLINE OCH GAMEPROCESSER
+
+	*	armer vars positions uppdateras till alla spelare. 
+
+	listor för ett område där perssonerna som är i listan får direktmedelande 
+	om nya städer, armer som byter riktning osv.
+
+	system för EC. EC ska möjliggöra uppgradering av städer, olika kostnader och vinster
+	på olika städer. Olika cashflows till olika objekt och mellan olika spelare.
+
+
+ LOKAL GAMEPLAY, UI OCH GRAFIK
+
+	zooma ut och in i mapen genom att dividera med dergtäthet.
+
+	*	armer som kan gå runt dit man klickar.
+
+	generera städer med olika grader av detalj beroende på inzoomningen
+
+	prefix på mängden pengar man har tex 100k istället för 100000
+
+	system för att inhängna areor med en kant/gräns. för att visa vilket område 
+	man kontrolerar och var man kan plasera sin nya stad etc.
+
+
+
+ PÅGÅENDE DELMÅL
+
+	*	klicka på världen och få positionen. KLAR
+	*	selecta olika armer genom att klicka på dem. KLAR
+	*	när man klickar på en position börjar staden gå dit genom att först KLAR
+
+
+
+OPTIMISERING
+
+*göra ett sätt att slippa att göra requests från mongodb när man ska ändra rörelse ordern på en arme.
+kanske spare oldposition inf i armen utan att byta ut det varje gång.
+
+
+NÄSTA 3 DAGARNA
+
+
+08/09
+göra så att de olika spelarna har olika färger,
+och att man bara kan kontrolera sina egna.
+
+08/10 göra att om man går in i en stad med en arme som inte
+tillhör en tar man den och det skickas eventobj i listan. som räknar ut pengar. 
+
+08/11
+ge servern räkna kapitalfunktionen så att kapital transaktionerna blir relevanta.
+
+
+
+
+
+
+
+
+
+
+
